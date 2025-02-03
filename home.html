@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Socionet</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<img src="/mnt/data/socionet_logo.png" alt="Socionet Logo" class="logo">
+<h1>Welcome to Socionet</h1>
+<input type="text" id="searchBar" placeholder="Search users or posts..." oninput="searchContent()">
+<h2>Create a Post</h2>
+<textarea id="postContent" placeholder="What's on your mind?"></textarea>
+<input type="file" id="mediaFile" accept="image/*, video/*">
+<button onclick="addPost()">Post</button>
+<h2>Feed</h2>
+<div id="feed"></div>
+<button onclick="logout()">Logout</button>
+</div>
+<script src="script.js"></script>
+<button onclick="window.location.href='profile.html'">Go to Profile</button>
+<button onclick="window.location.href='chat.html'">Go to Chat</button>
+<button onclick="window.location.href='account_search.html'">Search Accounts</button>
+<button onclick="window.location.href='manage_posts.html'">Manage Posts</button>
+</body>
+</html>

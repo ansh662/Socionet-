@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Search - Socionet</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<img src="socionet_logo.png" alt="Socionet Logo" class="logo">
+<h1>Search for Users</h1>
+<nav>
+<a href="home.html">Home</a> |
+<a href="profile.html">Profile</a> |
+<a href="chat.html">Chat</a> |
+<a href="manage_posts.html">Manage Posts</a> |
+<a href="#" onclick="logout()">Logout</a>
+</nav>
+<input type="text" id="searchBar" placeholder="Search users...">
+<button onclick="searchUsers()">Search</button>
+<div id="search-results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
